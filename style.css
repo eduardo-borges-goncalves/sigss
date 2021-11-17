@@ -20,6 +20,7 @@ body {
   justify-content: center;
   width: 100%;
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .card {
@@ -77,7 +78,8 @@ h1#entrar {
   transition: all 0.3s ease-out;
 }
 
-.label-float input:focus + label{
+.label-float input:focus + label, 
+.label-float input:valid + label {
   font-size: 13px;
   margin-top: 0;
   color: #22623d;
@@ -131,4 +133,69 @@ a:hover {
   transition: all .2s ease-out;
 }
 
+.fa-eye {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  cursor: pointer;
+  color: #123872;
+}
 
+
+/** Cad Style - Estilo do Cadastro**/
+
+.cardCad {
+  background-color: #ffffff80;
+  padding: 30px;
+  border-radius: 1%;
+  box-shadow: 3px 3px 5px 0px #00000070;
+  width: 400px;
+}
+
+.msgError {
+  color: red ;
+  padding: auto;
+  margin-top: 10px;
+  text-align: center;
+
+}
+
+.msgSuccess {
+  color: rgb(18, 214, 18) ;
+  padding: auto;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/** Inicial Area Style - Estilo da página inicial**/
+
+div.button {
+  display: flex;
+  justify-content:right;
+  width: 20%;
+  margin-left: 75%;
+  margin-top: 15px;
+  
+}
+
+#outBut {
+  width: 80px;
+  background-color: transparent;
+  color: black;
+  padding: 5px;
+  margin-top: 0;
+  font-size: 12pt;
+  border-radius: 2px;
+  cursor: pointer;
+  outline: none;
+  
+}
+
+#outBut:hover {
+  
+  color:rgb(67, 112, 108);
+  border-color: transparent ;
+  width: 80px;
+  transition: all 0.2s ease-out;
+  
+}

@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
 
@@ -13,18 +15,24 @@
     SIGSS 
   </h1>
 
+  
   <div class="container">
     <div class="card">
       <h1 id='entrar'> Entrar </h1>
 
+      <div id="msgError" class="msgError" > </div>
+
       <div class="label-float"> 
-        <input type="text" id="user">
+        <input type="text" id="user" placeholder="" required>
         <label for="user">Usuário</label>
       </div>
 
       <div class="label-float"> 
-        <input type="text" id="password">
+        <input type="password" id="password" placeholder="" required>
         <label for="password">Senha</label>
+        <i id='seePassword' class="fa fa-eye" aria-hidden="true"></i>
+
+
       </div>
 
       <div class="justify-center">
@@ -37,7 +45,7 @@
 
       <p>
         Não tem uma conta?
-        <a href="">Cadastre-se</a>
+        <a href="cadastro.html">Cadastre-se</a>
       </p>
 
 
