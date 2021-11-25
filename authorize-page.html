@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autorizar</title>
+    <link rel="stylesheet" href="style-authorize.css">
+
+</head>
+<body>
+    
+  <header>
+    <div class="sideBar">
+           
+      <div id="menuSideBar" class="">
+        <nav>
+          <button class="menuBut" onclick="mobileMenu()">
+             <div class="mobile-menu">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+             </div>
+          </button>
+                
+          <ul class="nav-list" id="nav-list">
+            <li  class="menu-element-level-one"id="menu-level-one">
+              <button onclick="levelOneMenu()">
+                Atendimento
+              </button>
+              <div id="sub-list">
+                <ul class="sub-list">
+                  <li class= "menu-element"><a href="">Agendamentos</a></li>
+                  <li class= "menu-element"><a href="solicitations.html">Solicitações</a></li>
+                  <li class= "menu-element"><a href="authorize-page.html">Autorizar</a></li>
+                  <li class= "menu-element"><a href="">Agendar</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="divSideBarBut">
+        <button value="" class="sideBarBut">
+          <img src="icons/architecture_building_home_house_property_icon_123288.ico" alt="" >
+        </button>
+        <button onclick="sair()" class="sideBarBut">
+          SAIR
+        </button>
+       </div>
+      
+    </div>
+  </header>
+
+  <main>
+    <h1>Autorizar</h1>
+    <section id='criterios'>
+
+      <div id="checkboxDiv">
+        <input type="radio" name="consulta ou exame" id="consulta" onclick="especialidadeOn()">  Consulta
+        <input type="radio" name="consulta ou exame" id="exame" onclick="tipoDeExameOn()">  Exame
+
+      </div>
+      <div id="especialidadeDiv">
+        <input type="search" name="" id="Especialidade">Especialidade
+      </div>
+      <div id="tipoDeExameDiv">        
+        <input type="search" name="" id="">Tipo de Exame
+      </div>
+
+      <div class="divBut"><button>Buscar</button></div>
+
+    </section>
+    <section id="solicitations">
+
+    </section>
+
+
+  </main>
+    
+  <script src="script-authorize.js"></script>
+</body>
+</html>
+
+
+<div class="layout-column">
+  <label>Tipo</label>
+  <select id="liesTipo" name="liesTipo" class="sigss-chosen chzn-done" size-expand="40px" tabindex="1" style="display: none;">
+      <option value="">TODOS</option>
+      <option value="ENC" selected="selected">CONSULTAS</option>
+      <option value="ENC-R">CONSULTAS DE RETORNO</option>
+      <option value="ENC_E_ENC-R">CONSULTAS E CONSULTAS DE RETORNO</option>
+      <option value="EXA">EXAME</option>
+      
+      <option value="AIH">AIH</option>
+      <option value="AIHE">AIHE</option>
+      <option value="AIHU">AIHU</option>
+      <option value="AIH_AIHE_AIHU">AIH, AIHE e AIHU</option>
+      <option value="BEN">BENEFÍCIO</option>
+      <!--<option value="MED">MEDICAMENTO</option>-->
+  </select>
+  <div id="liesTipo_chzn" class="chzn-container chzn-container-single" style="width: 200px;">
+    <a href="javascript:void(0)" class="chzn-single">
+    <span>CONSULTAS</span>
+    <div>
+    <b></b>
+    </div></a>
+    <div class="chzn-drop" style="left: -9000px; width: 238px; top: 17px;">
+    <div class="chzn-search">
+      <input class="chzn-input-search" id="liesTipo_chzn_search" name="liesTipo_chzn_search" type="text" maxlength="50" autocomplete="off" style="width: 203px;">
+    </div>
+    <ul class="chzn-results">
+      <li id="liesTipo_chzn_o_0" class="active-result" style="display: block;" title="TODOS">TODOS</li>
+      <li id="liesTipo_chzn_o_1" class="active-result result-selected" style="display: block;" title="CONSULTAS">CONSULTAS</li>
+      <li id="liesTipo_chzn_o_2" class="active-result" style="display: block;" title="CONSULTAS DE RETORNO">CONSULTAS DE RETORNO</li>
+      <li id="liesTipo_chzn_o_3" class="active-result" style="display: block;" title="CONSULTAS E CONSULTAS DE RETORNO">CONSULTAS E CONSULTAS DE RETORNO</li>
+      <li id="liesTipo_chzn_o_4" class="active-result" style="display: block;" title="EXAME">EXAME</li>
+      <li id="liesTipo_chzn_o_5" class="active-result" style="display: block;" title="AIH">AIH</li>
+      <li id="liesTipo_chzn_o_6" class="active-result" style="display: block;" title="AIHE">AIHE</li>
+      <li id="liesTipo_chzn_o_7" class="active-result" style="display: block;" title="AIHU">AIHU</li>
+      <li id="liesTipo_chzn_o_8" class="active-result" style="display: block;" title="AIH, AIHE e AIHU">AIH, AIHE e AIHU</li>
+      <li id="liesTipo_chzn_o_9" class="active-result" style="display: block;" title="BENEFÍCIO">BENEFÍCIO</li>
+    </ul>
+  </div>
+</div>
+</div>
