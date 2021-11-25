@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="cardCad">
+            <h1>
+                Cadastrar
+            </h1>
+
+            <div id="msgError" class="msgError" > </div>
+            <div id="msgSuccess" class="msgSuccess" > </div>
+
+            <div class="label-float">
+                <input type="text" id="userCad" placeholder="" required>
+
+                <label for="userCad" id="userCadLabel">Usuário</label>
+            </div>
+
+            <div class="label-float">
+                <input type="text" name="" id="nameCad" placeholder="" required>
+
+                <label for="nameCad" id="nameCadLabel">Nome</label>
+            </div>
+
+            <div class="label-float">
+                <input type="password" id="passwordCad" placeholder="" required>
+
+                <label for="passwordCad" id="passwordCadLabel">Senha</label>
+
+                <i id="seePasswordCad" class="fa fa-eye" aria-hidden="true"></i>
+            </div>
+
+            <div class="label-float">
+                <input type="password" id="confirmPasswordCad" placeholder="" required>
+
+                <label for="confirmPasswordCad" id="confirmPasswordCadLabel">Confirmar Senha</label>
+
+                <i id="seeConfirmPasswordCad" class="fa fa-eye" aria-hidden="true" ></i>
+
+            </div>
+            <div class="label-float">
+                <input type="text" id="cpfCad" placeholder="" required>
+
+                <label for="cpfCad" id="cpfCadLabel">CPF</label>
+            </div>
+            
+            <div class="label-float">
+                <input type="text" id="addressCad" placeholder="" required>
+
+                <label for="addressCad" id="addressCadLabel">Endereço</label>
+            </div>
+
+            <div class="label-float">
+                <button onclick="inputsAreOk()">Cadastrar</button>
+            </div>
+
+
+        </div>
+    </div>
+
+<script src="script cad.js"></script>
+    
+</body>
+</html>

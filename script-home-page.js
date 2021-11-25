@@ -4,7 +4,12 @@ let welcomeUser = document.querySelector("#welcomeUser")
 
 let menu = document.getElementById('menu')
 
+let navList = document.getElementById('nav-list')
+let menuOn = false
 
+let subList = document.getElementById('sub-list')
+let subListOn = false
+let menuLevelOne = document.getElementById('menu-level-one')
 
 if (localStorage.getItem('token') == null) {
   window.alert('Você precisa estar logado para acessar essa página')
@@ -20,36 +25,33 @@ function sair () {
   window.location.href = 'index.html'
 }
 
-
-class MobileNavBar  {
-  constructor (mobileMenu, navList, navLinks) {
-      this.mobileMenu = document.querySelector(mobileMenu);
-      this.navList = document.querySelector(navList);
-      this.navLinks = document.querySelectorAll(navLinks);
-      this.activeClass = 'active';
-
-      this.handleClick = this.handleClick.bind(this);
-  }
-
-  handleClick(){
-      this.navList.classList.toggle(this.activeClass);
-  }
-  addClickEvent() {
-      this.mobileMenu.addEventListener("click", this.handleClick);
-  }
-  init() {
-      if (this.mobileMenu) {
-          this.addClickEvent()
-      }
-      return this;
+function mobileMenu(){
+ 
+  if(menuOn == false) {
+    navList.setAttribute('style', "transform: translateX(0)")
+    menuOn = true;
+  } 
+  
+  else if (menuOn == true) {
+    navList.setAttribute('style', "transform: translateX(-150%")
+    menuOn = false;
+    menuLevelOne.setAttribute("style", "height: 12vh")
+    subList.setAttribute('style', "transform: translateX(-150%)")
+    subListOn = false;
   }
 }
 
-
-const mobileNavBar = new MobileNavBar(
-  ".mobile-menu",
-  ".nav-list",
-  ".nav-list li",
-);
-
-mobileNavBar.init()
+function levelOneMenu(){
+ 
+  if(subListOn == false) {
+    menuLevelOne.setAttribute("style", "height: 40vh")
+    subList.setAttribute('style', "transform: translateX(0)")
+    subListOn = true;
+  } 
+  
+  else if (subListOn == true) {
+    menuLevelOne.setAttribute("style", "height: 12vh")
+    subList.setAttribute('style', "transform: translateX(-150%)")
+    subListOn = false;
+  }
+}

@@ -12,7 +12,7 @@ let userValid = {
   cpf: '', 
   address:'',
 }
-
+ 
 userList = JSON.parse(localStorage.getItem("userList")) // isso aqui pega a lista salva com o outro arquivo do JS no navegador. 
 
 
@@ -52,7 +52,7 @@ function login(){
         && passwordLogin.value.length != 0) 
         
       {
-          window.location.href = "p002.html" 
+          window.location.href = "home-page.html" 
 
           let token = Math.random().toString(16).substring(2)
           localStorage.setItem('token', token)
