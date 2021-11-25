@@ -154,7 +154,7 @@ a:hover {
 }
 
 .sub-list li {
-margin-top: 0.5vh;
+margin-top: 0.5vh; 
 }
 
 .menu-element {
@@ -165,8 +165,8 @@ padding: 5px;
 .menu-element:hover {
   background-color: rgba(201, 206, 219, 0.507);
   box-shadow: 1px 1px 2px 1px rgba(45, 46, 94, 0.699);
-  
-  }
+
+}
 
 .menu-element-level-one {
 font-weight: bold;
@@ -191,6 +191,7 @@ letter-spacing: 1px;
 }
 
 .menu-element-level-one button:hover {
+  background-color: transparent;
 color: #123872;
 transition: transform 0.3s ease-in-out;
 }
