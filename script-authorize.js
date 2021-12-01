@@ -7,6 +7,8 @@ let tipoDeExame = document.getElementById('tipoDeExameDiv')
 let validate = false
 let validateExam = false
 
+
+
 function teste() {
     console.log(consulta)
 }
@@ -35,4 +37,8 @@ function tipoDeExameOn() {
     }
 }
 
+
+function buscar() {
+    document.getElementById('hidden').style.display = 'block';
+}
 

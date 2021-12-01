@@ -60,16 +60,63 @@
       <div id="checkboxDiv">
         <input type="radio" name="consulta ou exame" id="consulta" onclick="especialidadeOn()">  Consulta
         <input type="radio" name="consulta ou exame" id="exame" onclick="tipoDeExameOn()">  Exame
-
       </div>
+
       <div id="especialidadeDiv">
-        <input type="search" name="" id="Especialidade">Especialidade
+        Especialidade: <input name="" id="Especialidade" list="especialidade-list">
+        <datalist id="especialidade-list">
+          <option value="Clínica Médica"></option>
+          <option value="Cirurgia Geral"></option>
+          <option value="Cirurgia Pediátrica"></option>
+          <option value="Cirurgia Ginecológica"></option>
+          <option value="Cirurgia Urológica"></option>
+          <option value="Geriatria"></option>
+          <option value="Ginecologia"></option>
+          <option value="Hematologia"></option>
+          <option value="Obstetrícia"></option>
+          <option value="Odontologia"></option>
+          <option value="Oftalomogia"></option>
+          <option value="Oftalomogia córnea"></option>
+          <option value="Oftalomogia catarata"></option>
+          <option value="Ortopedia"></option>
+          <option value="Ortopedista mão"></option>
+          <option value="Ortopedista pé"></option>
+          <option value="Ortopedista ombro"></option>
+          <option value="Ortopedista joelho"></option>
+          <option value="Pediatria"></option>
+          <option value="Reumatologia"></option>
+          <option value="Urologia"></option>
+        </datalist>
       </div>
       <div id="tipoDeExameDiv">        
-        <input type="search" name="" id="">Tipo de Exame
+        Tipo de Exame: <input  name="" id="" list="tipo-de-exame-list">
+        <datalist id="tipo-de-exame-list">
+          <option value="Colonoscopia"></option>
+          <option value="Endoscopia"></option>
+          <option value="Raio-x"></option>
+          <option value="Ressonância Magnética"></option>
+          <option value="Tomografia"></option>
+          <option value="Ultrassonografia"></option>
+          <option value="Ultrassonografia de Partes Moles"></option>
+        </datalist>
       </div>
 
-      <div class="divBut"><button>Buscar</button></div>
+      <div class="divBut"><button onclick="buscar()">Buscar</button></div>
+
+      <div 
+      id="hidden" 
+      style= "
+      display: none;
+      height:300px;">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, velit nihil! Natus odit, similique dicta architecto quisquam voluptatem recusandae vel eum dignissimos nam corrupti deleniti modi nihil quo incidunt ducimus.
+        <input type="search">
+        <a href="https://web.whatsapp.com/"><button>
+          clique aqui</button></a>
+        <ul>
+          <li><a href="https://web.whatsapp.com/">whatsapp</a></li>
+        </ul>
+
+      </div>
 
     </section>
     <section id="solicitations">
@@ -82,6 +129,10 @@
   <script src="script-authorize.js"></script>
 </body>
 </html>
+
+
+
+<!--
 
 
 <div class="layout-column">
@@ -98,7 +149,7 @@
       <option value="AIHU">AIHU</option>
       <option value="AIH_AIHE_AIHU">AIH, AIHE e AIHU</option>
       <option value="BEN">BENEFÍCIO</option>
-      <!--<option value="MED">MEDICAMENTO</option>-->
+      <option value="MED">MEDICAMENTO</option>
   </select>
   <div id="liesTipo_chzn" class="chzn-container chzn-container-single" style="width: 200px;">
     <a href="javascript:void(0)" class="chzn-single">
@@ -125,3 +176,6 @@
   </div>
 </div>
 </div>
+
+  
+-->
