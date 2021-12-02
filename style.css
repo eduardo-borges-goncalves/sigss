@@ -13,7 +13,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
-
+ 
 .container {
   display: flex;
   justify-content: center;
@@ -166,7 +166,7 @@ a:hover {
 /** Inicial Area Style - Estilo da página inicial**/
 
 .sideBar {
-  position: absolute;
+  position: fixed;
   top: 0px;
   left: 0%;
   display: flex;
@@ -207,6 +207,7 @@ a:hover {
 
 .toolBar {
   display: flex;
+  flex-direction: column;
   margin-top: 48px;
   background-color: rgb(255, 255, 255);
   max-width: 960px;

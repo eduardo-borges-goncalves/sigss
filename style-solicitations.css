@@ -52,7 +52,7 @@ a:hover {
 }
 
 .sideBar {
-  position: absolute;
+  position: fixed;
   top: 0px;
   left: 0%;
   display: flex;
@@ -192,8 +192,8 @@ letter-spacing: 1px;
 
 .menu-element-level-one button:hover {
   background-color: transparent;
-color: #123872;
-transition: transform 0.3s ease-in-out;
+  color: #123872;
+  transition: transform 0.3s ease-in-out;
 }
 
 .menu-element-level-one a {
