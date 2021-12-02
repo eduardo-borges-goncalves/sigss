@@ -16,6 +16,8 @@ let subList = document.getElementById('sub-list')
 let subListOn = false
 let menuLevelOne = document.getElementById('menu-level-one')
 
+let modal = document.getElementById('modal-container-ID')
+
 if (localStorage.getItem('token') == null) {
   window.alert('Você precisa estar logado para acessar essa página')
   window.location.href = 'login.html'
@@ -95,3 +97,10 @@ function buscar() {
     document.getElementById('hidden').style.display = 'block';
 }
 
+function showTheDiv(){
+  modal.classList.add('showMe')
+}
+
+function closeModal() {
+  modal.classList.remove('showMe')
+}
