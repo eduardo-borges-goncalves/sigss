@@ -16,13 +16,22 @@ I started with what i knew at the time when I start: Javascript, Html e CSS. But
 We start with login. I did that with user cache, saving the data in navigator and using Json. I dont know how much about that but i will study more this in time.
 
 
+![p1](https://user-images.githubusercontent.com/92747098/150890060-1dbbae04-79ab-438a-a2e6-43fa14698515.jpeg)
+
+
 We have a area to the user make his register. Its very beautiful and the data go to user cache. 
+
+
+![p2](https://user-images.githubusercontent.com/92747098/150890173-6b3b02c3-a38d-4870-b4af-7d7f85b42c37.jpeg)
 
 
 After login, you are at the home-page. We havent so much here, but we have a side menu, a off button etc. 
 
 
-In the menu, we same pages that users will request same procedure, and other to the doctor authorize, and the last to the operator system schedule the exam or consultation. 
+In the menu, we count with same pages that users will request same procedure, and other to the doctor authorize, and the last to the operator system schedule the exam or consultation. 
+
+
+![p3](https://user-images.githubusercontent.com/92747098/150890202-4e60dccb-45d2-4299-a7a4-ea1ce8d9a2d4.jpeg)
 
 
 It's been building. The idea it's the user can have an area to consult his request and look his notifications, but this will be build later then this page are ready. 
@@ -32,7 +41,15 @@ It's been building. The idea it's the user can have an area to consult his reque
 
 Here are the page to the system operator request an appointment with a doctor or a exam. It's really complete. In the evolution system, the user data its send to the server, then it's stored at a Mongo DB Data Base, a NoSQL Data Base. 
 
+
+![p4](https://user-images.githubusercontent.com/92747098/150890356-0ec478fd-e96f-46c2-90b3-d21305c14ebb.jpeg)
+
+
 Here the doctor obtain the requests and annalise then to authorize the correct solicitations. 
+
+
+![p5](https://user-images.githubusercontent.com/92747098/150890446-52f781b5-6e61-4b4f-beb0-9f8be7e2f311.jpeg)
+
 
 # Conclusion 
 
